@@ -7,4 +7,4 @@ Asp.NET C#
 
 ## WEB API 
 
-Bachend Services for project  [Intelig UI](https://github.com/kwnstantina/intelig "intelig")
+Backend Services for project  [Intelig UI](https://github.com/kwnstantina/intelig "intelig")
