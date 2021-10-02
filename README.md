@@ -1,7 +1,7 @@
 # intelig.BE
 Backend for Intelig with  Asp.NET C#
 
-##Software
+## Software
 
 Asp.NET C#
 
