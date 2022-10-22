@@ -47,7 +47,7 @@ namespace Intellig.Api.Controllers
 
 
         [HttpPut]
-        public async Task<ActionResult> PutTableData(Guid Id, [FromBody] TableDto tabledto)
+        public async Task<ActionResult<Guid>> PutTableData(Guid Id, [FromBody] TableDto tabledto)
         {
             if (Id != tabledto.Id)
             {
@@ -55,7 +55,8 @@ namespace Intellig.Api.Controllers
                 return BadRequest();
             }
             await _tableRepository.Update(tabledto);
-            return NoContent();
+
+            return Id;
         }
 
         [HttpDelete("{id}")]
