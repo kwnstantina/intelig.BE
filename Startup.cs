@@ -45,7 +45,6 @@ namespace Intellig.Api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Intellig.Api", Version = "v1" });
             });
 
-            var connectionString = "server=(localdb)\\MSSGLLocalDB;Database=InteligDB;Trusted_Connection=True;MultipleActiveResultSets=true";
             IServiceCollection serviceCollection = services.AddDbContext<TableDtoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("InteligDBConnection")));
 
             //JSON sERIALIZER 

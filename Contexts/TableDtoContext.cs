@@ -13,7 +13,7 @@ namespace Intellig.Api.Contexts
         public TableDtoContext(DbContextOptions<TableDtoContext> options) : base(options)
         {
 
-            Database.EnsureCreated();
+           // Database.EnsureCreated();
 
         }
         public DbSet<TableDto> TableData {get; set;}
